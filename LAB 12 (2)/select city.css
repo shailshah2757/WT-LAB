@@ -1,0 +1,70 @@
+h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    margin-left: -40px;
+    margin-top: 40px;
+}
+
+select{
+    position: absolute;
+    top: 55px;
+    left: 700px;
+}
+
+.ahmedabad{
+    margin: auto;
+    background-image: url("images/Ahmedabad.jpg");
+    width: 70%;
+    margin-top: 30px;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-position: center cover;
+    border: 3px solid black;
+}
+
+.vadodara{
+    margin: auto;
+    background-image: url("images/Vadodara.jpg");
+    width: 70%;
+    margin-top: 30px;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-position: center cover;
+    border: 3px solid black;
+}
+
+.rajkot{
+    margin: auto;
+    background-image: url("images/Rajkot.jpg");
+    width: 70%;
+    margin-top: 30px;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-position: center cover;
+    border: 3px solid black;
+}
+
+.surat{
+    margin: auto;
+    background-image: url("images/Surat.jpg");
+    width: 70%;
+    margin-top: 30px;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-position: center cover;
+    border: 3px solid black;
+}
+
+.junagadh{
+    margin: auto;
+    background-image: url("images/Junagadh.jpg");
+    width: 67%;
+    margin-top: 30px;
+    height: 550px;
+    background-repeat: no-repeat;
+    background-position: center cover;
+    border: 3px solid black;
+}
