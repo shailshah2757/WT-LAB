@@ -1,0 +1,8 @@
+.container{
+    color: white;
+}
+.logo{
+    margin-top: 1rem;
+    justify-content: space-between;
+    display: flex;
+}

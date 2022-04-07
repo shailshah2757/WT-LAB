@@ -1,0 +1,17 @@
+.container{
+    color: white;
+}
+.logo_navigation{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    align-items: center;
+}
+#logo{
+    padding-left: 2rem ;
+}
+
+#navigation{
+    padding-right: 5rem;
+}
