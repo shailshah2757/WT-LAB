@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Suite</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Cinzel', serif;
+        margin: 0px;
+        padding: 0px;
+        background: url('images/img_bg.jpg');
+        background-repeat: no-repeat;
+        background-size: 1555px;
+        color: white;
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 35px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 100px;
+    }
+
+    .mid {
+        display: block;
+        width: 47%;
+        margin: 20px auto;
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        right: 35px;
+        top: 20px;
+    }
+
+    form.example input[type=text]{
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: right;
+        width: 60%;
+        background: #f1f1f1;
+    }
+
+    form.example button {
+        float: right;
+        width: 20%;
+        padding: 10px;
+        background: #852a2a;
+        color: gray;
+        font-size: 17px;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+
+    form.example button:hover {
+        background: #6d2121;
+    }
+
+    form.example::after {
+        content: "";
+        clear: both;
+        display: inline-block;
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+        color: white;
+        display: inline-block;
+        font-size: 17px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 35px 25px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: goldenrod;
+    }
+
+    .btn {
+        margin-top: 30px;
+        margin-left: 70px;
+    }
+
+    form.btn button {
+        font-family: 'Cinzel', serif;
+        height: auto;
+        padding: 3px;
+        background: transparent;
+        color: white;
+        font-size: 10px;
+        cursor: pointer;
+        border: transparent;
+    }
+
+    form.btn button:hover {
+        color: goldenrod;
+    }
+
+    form.btn::after {
+        content: "";
+        clear: both;
+        display: inline-block;
+    }
+
+    .container {
+        margin: 85px 80px;
+        padding: 75px;
+        width: 92%;
+        display: block;
+        border-radius: 25px;
+        font-size: 10px;
+    }
+
+    .form_group input {
+        font-family: 'Cinzel', serif;
+        text-align: center;
+        display: block;
+        width: 450px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 20px;
+        border-radius: 8px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .social-menu ul{
+        position: absolute;
+        top: 87%;
+        left: 50%;
+        padding: 0px;
+        margin: 0px;
+        transform: translate(-50%, -50%);
+        display: flex;
+    }
+
+    .social-menu ul li{
+        list-style: none;
+        margin-left: 50px;
+    }
+    .social-menu ul li .fa{
+        font-size: 25px;
+        line-height: 40px;
+        color: #000;
+    }
+    .social-menu ul li .fa:hover{
+        color: #fff;
+    }
+    .social-menu ul li a{
+        position: relative;
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        background-color: #fff;
+        text-align: center;
+        transition: 0.1s;
+        box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+    }
+    .social-menu ul li a:hover{
+        transform: translate(0, -5px);
+    }
+    .social-menu ul li:nth-child(1) a:hover{
+        background-color: #d34836;
+    }
+    .social-menu ul li:nth-child(2) a:hover{
+        background-color: #1877F2;
+    }
+    .social-menu ul li:nth-child(3) a:hover{
+        background-color: #555555;
+    }
+    .social-menu ul li:nth-child(4) a:hover{
+        background-color: #1DA1F2;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="images/img_logo.png">
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Kids</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <form class="example" action="action_page.php">
+                <input type="text" placeholder="Search" name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <form class="btn" action="button.php">
+                <button style="font-size:15px"><i class="fa fa-phone"></i>&nbsp;Contact Us for Home Deliveries</button>
+            </form>
+        </div>
+        <div class="container">
+            <h1>Welcome to the Fashion World</h1>
+            <form action="noaction.php">
+                <div class="form_group">
+                    <input type="text" placeholder="First Name">
+                </div>
+                <div class="form_group">
+                    <input type="text" placeholder="Last Name">
+                </div>
+                <div class="form_group">
+                    <input type="text" placeholder="Phone Number">
+                </div>
+                <div class="form_group">
+                    <input type="email" placeholder="Email Address">
+                </div>
+                <div class="form_group">
+                    <input type="password" placeholder="Password (12-15 Characters)">
+                </div>
+                <div class="form_group">
+                    <input type="password" placeholder="Confirm Password">
+                </div>
+                <div class="form_group">
+                    <input type="submit" value="Register">
+                </div>
+                <div class="social-menu">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-google"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-apple"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </header>
+</body>
+
+</html>
